@@ -9,8 +9,8 @@
     "HS-R-abend": ["regensburg-oth-abend", "regensburg-oth-evening", "regensburg-seybothstrasse-abends"],
     "Cafeteria-Pruefening": ["regensburg-oth-pruefening", "regensburg-pruefening", "oth-prüfening"],
 
-    "UNI-P": ["parsberg-university", "parsberg-universität"],
-    "Cafeteria-Nikolakloster": ["parsberg-nikolakloster", "parsberg-university-nikolakloster", "parsberg-universität-nikolakloster"],
+    "UNI-P": ["passau-university", "passau-universität"],
+    "Cafeteria-Nikolakloster": ["passau-nikolakloster", "passau-university-nikolakloster", "passau-universität-nikolakloster"],
 
     "HS-DEG": ["deggendorf-hs"],
     "HS-LA": ["landshut-haw"],
