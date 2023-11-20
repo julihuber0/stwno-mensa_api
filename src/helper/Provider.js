@@ -28,6 +28,7 @@ function resolveDay(dayValue) {
       resolvedDay = dayKey;
     }
   });
+  console.log('Resolved day: ' + resolvedDay);
 
   return resolvedDay;
 }
@@ -43,6 +44,7 @@ function resolveToday() {
 module.exports.resolveToday = resolveToday;
 
 function isValidDay(dayValue) {
+  console.log('dayValue');
   return resolveDay(dayValue) !== undefined;
 }
 module.exports.isValidDay = isValidDay;
