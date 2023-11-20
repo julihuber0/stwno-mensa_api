@@ -98,11 +98,13 @@ module.exports.getItems = getItems;
  */
 function getItemsOnLocation(location) {
   if (!location) {
+    console.log('Location undefined');
     throw new Error('Location is undefined');
   }
 
   const resolvedLocation = resolveLocation(location);
   if (!resolvedLocation) {
+    console.log('Location invalid');
     throw new Error(`Location ${location} is invalid.`);
   }
 
@@ -117,6 +119,7 @@ module.exports.getItemsOnLocation = getItemsOnLocation;
  */
 function getItemsOnLocationForDay(location, day) {
   if (!day) {
+    console.log('Day undefined');
     throw new Error('Day is undefined.');
   }
 
@@ -124,6 +127,7 @@ function getItemsOnLocationForDay(location, day) {
     ? resolveToday() : resolveDay(day);
 
   if (!resolvedDay) {
+    console.log('Day is invalid');
     throw new Error(`Day ${day} is invalid.`);
   }
 
