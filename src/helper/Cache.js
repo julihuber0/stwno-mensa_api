@@ -38,9 +38,11 @@ function readMenu(location) {
       const data = fs.readFileSync(filename);
       return JSON.parse(data);
     } catch (err) {
+      console.log('Error reading menu');
       throw err;
     }
   } else {
+    console.log('No cached menu');
     throw new Error(`No cached menu for location=${location} filename=${filename}`);
   }
 }
