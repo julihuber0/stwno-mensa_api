@@ -62,24 +62,18 @@ function getItemsOnLocationForDay(request, response) {
 
   try {
     const [location, day] = [request.params.location, request.params.day];
-    console.log(location);
-    console.log(day);
 
     if (!Provider.isValidLocation(location)) {
       throw new InvalidLocationParameterError(location);
     }
-    console.log('Validated location');
 
     if (!Provider.isValidDay(day)) {
       throw new InvalidDayParameterError(day);
     }
-    console.log('Validated day');
 
     const data = Provider.getItemsOnLocationForDay(location, day);
-    console.log('Got items');
     response.status(200).json(data);
   } catch (err) {
-    console.log('Yeet');
     response.status(400).json({ error: err });
   }
 }
